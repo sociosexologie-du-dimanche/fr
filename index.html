@@ -9,9 +9,17 @@
 
         
         <link rel="stylesheet" href="style.css" />
-        <link rel="alternate" href="http://sociosexologie-du-dimanche.github.io/fr-mobile" media="only screen and (max-width: 640px)"/>
+        <link rel="alternate" href="http://sociosexologie-du-dimanche.github.io/fr-mobile" media="only screen and (max-width: 750px)"/>
         <title>Sexualité en France : une infographie décalée</title>
-  		
+        
+        <script type='text/javascript'>
+            (function(){
+                var mql = window.matchMedia('only screen and (max-width: 750px)');
+                if (mql.matches) {
+                    window.location = 'http://sociosexologie-du-dimanche.github.io/fr-mobile' ;
+                }
+            })();
+  		</script>
     </head>
 
 
