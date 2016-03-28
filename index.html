@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Visualisation de données et infographies sur la sexualité en France" />
+        <meta name="keywords" content="sexe,sexualité,France,français,infographie,dataviz,clichés,sodomie,satisfaction" />
+        <meta name="author" content="Marie Beigelman Romain Damian Kim Montalibet Pierre Tanneau" />
+        
+        <link rel="stylesheet" href="style.css" />
+        <link rel="alternate" href="http://sociosexologie-du-dimanche.github.io/fr-mobile"/>
+        <title>Sexualité en France : une infographie décalée</title>
+  		
+    </head>
+
+
+
+    <body> 
+        <div id="toolFilms"></div>
+        <div id="toolIfop"></div>
+        <div id='toolContact'></div>
+        <div id="toolAurevoir"></div>
+        <div id='fenetreBlur'></div>
+        
+
+
+		<div id="accueil">
+			<a class="scrollTo" href="#mycanvas"><canvas id="mycanvas" style="background:'white'"></canvas></a>
+            <div id="banniere">
+                   Tout ce que vous avez toujours <br/>
+                   cru savoir sur le <span class="emph" style='color:#DA665B;'>sexe</span>... <br/>
+                   ... sans jamais oser le vérifier
+                
+            </div>
+            <a class="scrollTo" href="#pIntro"><div id="buttonOpen" style="left:55%"></div></a>
+	       
+            
+     		<span class="box">
+                <div id="liensVersions">
+                    <a href='http://sociosexologie-du-dimanche.github.io/en'><div id="Uk"></div></a>
+                </div>
+	        	<nav>
+		            <ul>
+		                <li><a class="scrollTo" href="#religion">Sexualité et religion</a></li>
+		                <li><a class="scrollTo" href="#gaterie">Une petite gâterie ?</a></li>
+		                <li><a class="scrollTo" href="#politique">La politique sans complexe</a></li>
+		                <li><a class="scrollTo" href="#satisfaction">Du sexe satisfait</a></li>
+                        <li><a class="scrollTo" href="#vieux">Et après <br/>50 ans ?</a></li>
+		            </ul>
+		        </nav>
+                
+                <div id='buttons'>
+                    <a href="http://www.facebook.com/sharer.php?u=http://sociosexologie-du-dimanche.github.io/fr" target="_blank">
+                            <img src="Images/facebook.png" alt="Facebook" />
+                    </a>
+                    
+    <!-- Google+ -->
+                    <a href="https://plus.google.com/share?url=http://sociosexologie-du-dimanche.github.io/fr" target="_blank">
+                        <img src="Images/google.png" alt="Google" />
+                    </a>
+    
+    <!-- LinkedIn -->
+                    <a href='https://www.linkedin.com/shareArticle?mini=true&url=http://sociosexologie-du-dimanche.github.io/fr&title=Tout%20ce%20que%20vous%20avez%20toujours%20cru%20savoir%20sur%20le%20sexe&summary=Un%20projet%20de%20dataviz%20sur%20la%20sexualite%20des%20Francais' target='_blank'>
+                        <img src="Images/linkedin.png" alt="LinkedIn" />
+                    </a>
+                    
+                    <a href="https://twitter.com/share?url=http://sociosexologie-du-dimanche.github.io/fr&amp;text=Une%20infographie%20sur%20la%20sexualite%20des%20francais&amp;hashtags=dataviz" target="_blank">
+                        <img src="Images/twitter.png" alt="Twitter" />
+                    </a>
+                    
+                    <a href="http://reddit.com/submit?url=http://sociosexologie-du-dimanche.github.io/fr&amp;title=Une infographie sur la sexualite des Francais" target="_blank">
+                        <img src="Images/reddit.png" alt="Reddit" />
+                    </a> 
+                </div>
+                
+                <footer>
+	      	             <ul style ="text-align: justify">
+                            <li id="sourceDonnees">Source des données</li>
+	                        <li id="filmList">D'où viennent ces arrières-plan ?</li>
+                            <li id="auteurs">Les auteurs</li>
+	                    </ul>
+                </footer>	
+		      </span>
+		</div>   
+		
+	       
+	    <section id="corps">
+
+            <p id="pIntro"> Parce que le sexe relève du plus intime pour chacun, les discours autour des pratiques sexuelles nourrisent souvent de nombreux fantasmes. Vous vous êtes peut-être déjà demandé quels étaient les petits plaisirs secrets de vos copains-copines, voisins, ou même patron. La mauvaise nouvelle - mais plutôt bonne finalement - c'est qu'à moins d'essayer vous même vous n'en saurez pas plus. C'est pourquoi certains clichés ont la vie dure. Y'a-t-il vraiment moins d'homos chez les cathos ? Sodomise-t-on plus souvent selon qu'on est de droite ou de gauche ? Testez donc maintenant vos a priori sur le sexe en toute impunité ! <span class="hidden">Promis, on ne se moquera pas si vous avez tout faux</span></p>
+                
+            
+            <div id="imgIntro"></div>
+            <a class="scrollTo" href="#religion"><div class="following" style="margin-bottom:400px; margin-top:40px"></div></a>
+
+
+            <section class="bloc_histoire">
+                <div class="titre_image">
+                    <h1 id="religion"><a class="scrollTo" href="#banniere">Sexualité et pratiques religieuses</a></h1>
+                    <a class="scrollTo" href="#banniere"><span class="buttonUp"></span></a>
+                    <a class="scrollTo" href="#gaterie"><span class="buttonDown"></span></a>
+                    <a class="scrollTo" href="#banniere"><span class="bullet"></span></a>
+                </div>
+				<h2>Sodome et Gomorrhe, on en est où ?</h2>
+
+		      
+		        	 <div id='quizz1' class="fenetre">
+                        <div class="infographie">
+                            <div id="chiffreInfoCathos"></div>
+                            <div id="imagesCathos"></div>
+                            <div id="imagesAthees"></div>
+                        </div>
+                        <div class="commentaire"></div>
+                        <div class="fenetreQuestion">
+                            <div class='question'>En France, parmi les individus se déclarant <em>non-religieux</em>, on compte plus d'un.e homosexuel.le sur dix. Et chez les catholiques alors ?</div>
+                            <div class="reponseV">Plus d'un sur dix également</div>
+                            <div class="reponseF">Ah non ! Sûrement moins</div>
+                        </div>
+                    </div>
+
+                <a class="scrollTo" href="#preliminaires" style="margin-top:20px;"><div class="following"></div></a>
+            </section>
+            <section class='bloc_histoire'>
+                <h2 id="preliminaires" style="margin-top:100px">Mais alors, les pipes et tout ça, ça compte ?</h2>
+                
+                <div id='listePam'>
+                    <p class="pPleinePage"> Si le poids de l'appartenance religieuse sur la pratique sexuelle en général semble avoir diminué - comme en témoigne la rareté de vos copains P.A.M auxquels nous conseillons la lecture de ces articles (<span id='lienArticles'>clique!</span>) - , la religion joue encore un rôle prépondérant dans les préférences sexuelles. </p>
+                    
+
+                    <div id='liensPam'>
+                        <p>Sur Huffington post : <a href='http://www.huffingtonpost.com/mandy-velez/the-problem-with-waiting-for-marriage_b_5079625.html' target='_blank'>"The problem with <em>waiting for marriage</em>"</a></p>
+                        <p>Sur Huffington post (aussi) : <a href='http://www.huffingtonpost.com/yourtango/waiting-until-im-married-to-have-sex_b_9030984.html' target='_blank'>"Waiting Until Marriage To Have Sex Doesn’t Make Me Naïve"</a></p>
+                        <p>Sur xojane.com : <a href='http://www.xojane.com/sex/true-love-waits-pledge' target='_blank'>"I waited until my wedding night to lose my virginity and I wish I hadn't."</a></p>
+                        <p>Sur aleteia.org : <a href='http://aleteia.org/2014/05/23/10-good-reasons-to-save-sex-until-marriage/' target='_blank'>"Ten good reasons to save sex until marriage"</a></p>
+                    </div>
+                </div>
+                
+                <div id="infographiePam" class="fenetre">
+				    <div class="infographie" >
+	        		     <div id="highchart1" style="width: 500px; height: 300px; margin: 0px auto "></div>
+                    </div>
+				    <div class="commentaire">
+                         <p> C'est ainsi que <span class="chiffre"> 21%</span>  des catholiques pratiquants et <span class="chiffre"> 23%</span> des individus d'une autre religion <span class="emph"> n'ont jamais sucé ou léché le sexe de leur partenaire </span>, contre seulement <span class="chiffre"> 11%</span> chez les non-religieux. Les catholiques non-pratiquants quant à eux aiment autant lécher/sucer le sexe de leur partenaire que leurs compatriotes agnostiques.</p>
+
+	         		   <p> Plus que l'appartenance religieuse, c'est donc la pratique de la religion qui est déterminante pour expliquer les pratiques sexuelles des individus. <span class="chiffre"> 63%</span> <span class="emph">des catholiques pratiquants n'ont jamais pratiqué la sodomie </span> même avec une personne du même sexe contre <span class="chiffre"> 46%</span> <span class="emph"> pour le reste de la population </span> </p>
+	         	     </div>
+                </div>
+                
+                <a class="scrollTo" href="#gaterie"><div class="following"></div></a>
+
+            </section>
+            
+            <section class="bloc_histoire">
+                <div class="titre_image">
+				    <a class="scrollTo" href="#banniere"><h1 id="gaterie">Pratiques bucales... sexuées ?</h1></a>
+                    <a class="scrollTo" href="#religion"><span class="buttonUp"></span></a>
+                    <a class="scrollTo" href="#politique"><span class="buttonDown"></span></a>
+                    <a class="scrollTo" href="#banniere"><span class="bullet"></span></a>
+                </div>
+                
+                <div id="titreGateries">
+                    <h2><span id="titreGaterieSpan">Il/elle me lèche, un peu, beaucoup... pas du tout</span></h2>
+                </div>
+                
+                
+		      <div id='quizz2' class="fenetre">
+                    <div class="commentaire"></div>
+                    <div class="infographie">
+                        <div id="gauge"></div>
+                    </div>
+                    <div class="fenetreQuestion">
+                        <div class='question'>Avouez-le, dans l'imaginaire collectif, les fellations sont quand même plus fréquentes que les cunnilingus (<a href='http://www.theguardian.com/film/filmblog/2013/nov/28/oral-sex-movies-cunnilingus-problem-evan-rachel-wood' target='_blank'>et on ne parle pas du cinéma</a>)... Mais dans les faits ? Qui fait le plus de gâteries ? Les hommes ? Les femmes ?</div>
+                        <div class="reponseF">Les femmes, l'imaginaire collectif a toujours raison</div>
+                        <div class="reponseV">Les hommes, mais ils n'en parlent pas</div>
+                    </div>
+                </div>	
+                <a class="scrollTo" href="#diploBucal"><div class="following"></div></a>
+
+                
+            </section>
+            <section class="bloc_histoire">
+                <h2 id="diploBucal" style="margin-top:100px">Et le diplôme, ça change quoi ?</h2>
+                <p class="pPleinePage">Vous savez désormais que les hommes sont plus nombreux que les femmes à déclarer <span class="emph">sucer ou lécher le sexe de leur partenaire souvent</span>. Mais si on creuse un peu plus, est-ce qu'on voit des différences selon à qui on a affaire ? Allez, on vous aide, le diplôme, ça marche.</p>
+                
+                <div id="quizz3" class='fenetre'>
+                    <div class='infographie'><div id='treemap'></div></div>
+                    <div class='commentaire'></div>
+                    <div class='fenetreQuestion'>
+                        <div class='question'>Le diplôme a bien une influence sur la fréquence des pratiques orales... Pour qui cette influence est-elle la plus forte ?</div>
+                        <div class="reponseF">Les hommes</div>
+                        <div class="reponseV">Les femmes</div>
+                    </div>
+                </div>
+                <a class="scrollTo" href="#politique"><div class="following"></div></a>
+
+
+            </section>
+            
+            <section class="bloc_histoire">
+                <div class="titre_image">
+
+				    <a class="scrollTo" href="#banniere"><h1 id="politique">Politique sans complexe</h1></a>
+                    <a class="scrollTo" href="#gaterie"><span class="buttonUp"></span></a>
+                    <a class="scrollTo" href="#satisfaction"><span class="buttonDown"></span></a>
+                    <a class="scrollTo" href="#banniere"><span class="bullet"></span></a>
+                </div>
+
+
+
+            <h2>... et anus politisés </h2>
+            <p class="pPleinePage"> Comme vous avez pu le constater les goûts et les couleurs en matière de sexe varient en fonction de l'appartenance religieuse. Et qu'en est-il de l'appartenance politique ?</p>
+
+            
+                <div id='quizz4' class="fenetre">
+                <div class='infographie'><div id='polsodo' style="width:600px;height:400px;margin:auto"></div></div>
+                <div class='commentaire'></div>
+                <div class='fenetreQuestion'>
+                    <div class='question'>Conservatisme politique rime-t-il avec conservatisme sexuel ?</div>
+                    <div class='reponseV'>La réponse D.</div>
+                    <div class='reponseF'>La mauvaise réponse.</div>
+                </div>
+            </div>
+            <a class="scrollTo" href="#satisfaction"><div class="following"></div></a>
+
+            </section>
+            <section class="bloc_histoire">
+                <div class="titre_image" style="margin-bottom:40px">
+				    <a class="scrollTo" href="#banniere"><h1 id="satisfaction">Recettes de satisfaction</h1></a>
+                    <a class="scrollTo" href="#politique"><span class="buttonUp"></span></a>
+                    <a class="scrollTo" href="#vieux"><span class="buttonDown"></span></a>
+                    <a class="scrollTo" href="#banniere"><span class="bullet"></span></a>
+                </div>
+                <h2>La loi des grands nombres...<br/> même pour les partenaires sexuels ? </h2>
+                <div id="pBarney">
+                    <p class="pPleinePage">
+                        <span id='spanBarney' class="emph">New is always better !</span> L'inconnu, la découverte, une pétillante incertitude... certains affirment que le plaisir ne fait qu'augmenter avec l'expérience et la rencontre de nouveaux partenaires. En même temps, qui connaît peu (de partenaires), connaît bien ! Pourquoi la satisfaction ne serait-elle pas plus intense pour ceux ayant connu peu de complices de lit ?
+                    </p>
+                </div>
+
+                <div id='quizz5' class='fenetre'>
+                    <div class='infographie'>
+                        <div id="nombre" style="min-width: 600px; height: 400px; margin: 0 auto"></div>
+                    </div>
+                    <div class="commentaire"></div>
+                    <div class="fenetreQuestion">
+                        <div class="question">Qui des <span id='spanInsep'>inséparables</span> ou des petits lapins sont les plus satisfaits sexuellement ?</div>
+                        <div class="reponseV">Les inséparables ! Rien de mieux qu'un terrain connu pour prendre son pied.</div>
+                        <div class="reponseF">Les petits lapins, Barney Stinson a raison.</div>
+                    </div>
+                </div>
+                
+            <a class="scrollTo" href="#titreSatis"><div class="following"></div></a>
+
+                
+            </section>
+            <section class="bloc_histoire">
+                <div id="titreSatis">
+                    <h2><span id="titreSatisSpan">Vivre heureux ou vivre à deux ?</span></h2>
+                </div>
+                
+                <p class="pPleinePage" style="padding-left: 120px;"><em>What if I... unpack here ?<br/> - Then all your stuff would be here !<br/> - Well, what if all my stuff was here ? <br/>- Then you'd be going back and forth all the time, I mean... It doesn't make any sense ! <br/>- Okay... What if we live together and you understand what I'm saying ?!</em></p>
+                
+                <p class="pPleinePage" style='text-align:right'><a href='http://friends.wikia.com/wiki/The_One_After_Vegas' target='_blank'><em>Friends</em>, saison 6, épisode 1, <em>The one after Vegas</em></a></p>
+                
+                <p class="pPleinePage">Emménager ensemble... une grande étape ! Après une ou plusieurs années passées en coloc à faire plus ou moins ce qu'on veut, est-il si simple que ça de soudain vivre à deux, et surtout, d'être toujours aussi satisfait de son activité sexuelle maintenant que les pétillants <span class='emph'>"Tu viens chez moi ce soir ?"</span> ont disparu ? D'un autre côté, chez soi devient chez l'autre, et inversement, et c'est quand même plutôt séduisant...</p>
+                <div id="quizz6" class="fenetre" style="margin-top:80px">
+                    <div class="infographie">
+                        <p><span class='chiffre'>21%</span> des couples cohabitants sont <span class='emph'>peu ou pas satisfaits</span> de leur vie sexuelle...</p>
+                        <p><span class='chiffre'>1 sur 3</span> membre d'un couple cohabitant est <span class='emph'>très satisfait</span> de sa vie sexuelle...</p>
+                    </div>
+                    <div class="commentaire">
+                        <p>...c'est le cas de <em>seulement</em> <span class='chiffre'>14%</span> des couples non-cohabitants</p>
+                        <p>...tandis qu'on en trouve <span class='chiffre'>1 sur 2</span> parmi les couples non cohabitants</p>
+                    </div>
+                    <div class="fenetreQuestion">
+                        <div class="question">Alors, solitude partagée ou intimité à deux ?</div>
+                        <div class="reponseV">Les courses en commun, hors de question !</div>
+                        <div class="reponseF">Rentrer et avoir doudou à la maison, le rêve !</div>
+                    </div>
+                </div>
+                <p id='comLat' class="pPleinePage">Ces couples non cohabitants plus satisfaits que les autres — nos amis chercheurs les appellent <a href='https://www.ined.fr/fichier/s_rubrique/19829/popf.3.martin.2011.fr.pdf' target='_blank'>living apart together</a> (<em>LAT</em> ) — sont bien sympathiques, mais les célibs alors ? Au sein des couples (<em>LAT</em> ou pas), on compte <span class='chiffre'>1 sur 5</span> répondants <span class='emph'>peu ou pas satisfait</span>. Chez les célibataires — endurcis ou ayant déjà été en couple — on passe à <span class='chiffre'>1 sur 2</span> ! Partenaire sexuel régulier et identifié, connaissance de l'autre et intimité partagée : <span class='emph'>les personnes en couple se déclarent bien moins insatisfaites que les célibataires.</span> Alors, pour vivre heureux, vivons séparés... et en couple !</p>
+
+                <a class="scrollTo" href="#vieux"><div class="following"></div></a>
+            </section>
+            <section class='bloc_histoire'>
+                <div class="titre_image">
+				    <a class="scrollTo" href="#banniere"><h1 id="vieux">Vieillir et se faire plaisir</h1></a>
+                    <a class="scrollTo" href="#politique"><span class="buttonUp"></span></a>
+                    <a class="scrollTo" href="#banniere"><span class="bullet"></span></a>
+                </div>
+                <h2 style="margin-top:40px">Quand le sexe n'a (presque) pas d'âge</h2>
+                
+                <p class="pPleinePage" style="padding-left: 120px;"><em>Vieux, moi ? Je peux encore faire l'amour deux fois de suite. Une fois l'hiver, une fois l'été.</em></p>
+                
+                <p class="pPleinePage" style='text-align:right'>Alfred Capus</p>
+                
+               <div id='quizz7' class='fenetre'>
+                    <div class='infographie'>
+                        <div id='vieillir' style="width:600px;height:350px ;margin: 0 auto"></div>
+                    </div>
+                                      
+                    <div class="commentaire"></div>
+                    <div class="fenetreQuestion">
+                        <div class="question">Papy et mamie sont-ils encore en état de remettre le couvert ?</div>
+                        <div class="reponseV"><img src="Images/coeur.png"> Il n'y pas d'âge pour ça, tant qu'il y a de l'amour <img src="Images/coeur.png"/></div>
+                        <div class="reponseF">Sûrement pas. Passé un certain âge, popol ne répond plus</div>
+                    </div>
+                </div>
+                
+
+
+
+            </section>
+             <div class='hidden' id='bonusNathan'>
+                    <a href='https://youtu.be/4Imf_G7GELA?t=5m24s' target='_blank'>En bonus de fin, un extrait (avec du sexe !) en rapport avec cette dernière partie, issu de l'excellente série <em>Misfits</em></a>.
+                </div>
+            <div id='buttonGoodbye' class='goodbye'></div>
+        </section>
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://code.highcharts.com/modules/exporting.js"></script> 
+        <script src="https://code.highcharts.com/modules/data.js"></script>
+        <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+        <script type="text/javascript" src="js/paper-full.js"></script>
+    
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+        <script src="https://code.highcharts.com/modules/treemap.js"></script>
+        <script src="http://code.highcharts.com/modules/exporting.js"></script> 
+        <script src="https://code.highcharts.com/modules/data.js"></script>
+
+		<script type="text/paperscript" src="js/sperm.js" canvas="mycanvas"></script>    
+        <script type="text/javascript" src='js/highchart1.js'></script>
+        <script type="text/javascript" src='js/cathos.js'></script>
+        <script type="text/javascript" src="js/gauge.js"></script>
+        <script type="text/javascript" src="js/treemap.js"></script>
+
+                
+    
+        <script type="text/javascript" src='js/quizz.js'></script>
+        <script type="text/javascript" src="js/animations.js"></script>
+        <script type='text/javascript' src="js/polsodo.js"></script>
+        <script type='text/javascript' src="js/nombre.js"></script>
+        <script type="text/javascript" src="js/vieillir.js"></script>
+
+
+
+
+
+    </body>
+</html>
