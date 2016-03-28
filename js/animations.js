@@ -164,6 +164,9 @@
                 nom :'Blue Valentine',
                 lien : 'http://www.imdb.com/title/tt1120985/' ,
             },{
+                nom :'Titanic',
+                lien : 'http://www.imdb.com/title/tt0120338/',
+            },{
                 nom:'American History X',
                 lien: 'http://www.imdb.com/title/tt0120586/',
             },{
