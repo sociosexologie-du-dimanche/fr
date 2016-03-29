@@ -40,13 +40,15 @@
         </script>
         
         <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5&appId=230706700616703";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5&appId=230706700616703";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
     </head>
 
 
@@ -86,7 +88,7 @@
 		        </nav>
                 
                 <div id='buttons'>
-                    <a href="http://www.facebook.com/sharer.php?u=http://sociosexologie-du-dimanche.github.io/fr" target="_blank">
+                    <a href="http://www.facebook.com/sharer.php?u=http://sociosexologie-du-dimanche.github.io/fr&title=Tout%20ce%20que%20vous%20avez%20toujours%20cru%20savoir%20sur%20le%20sexe&summary=Un%20projet%20de%20dataviz%20sur%20la%20sexualite%20des%20Francais" target="_blank">
                             <img src="Images/facebook.png" alt="Facebook" />
                     </a>
                     
@@ -350,7 +352,7 @@
                 </div>
             <div id='buttonGoodbye' class='goodbye'></div>
             
-            <div class="fb-comments" data-href="http://sociosexologie-du-dimanche.github.io/fr/" data-width="600" data-numposts="5"></div>
+            <div class="fb-comments" data-href="http://sociosexologie-du-dimanche.github.io/fr/" data-width="600" data-numposts="5" style='margin:20px auto;'></div>
         </section>
         
 
