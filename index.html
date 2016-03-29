@@ -20,6 +20,24 @@
                 }
             })();
   		</script>
+        
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId      : '230706700616703',
+                    xfbml      : true,
+                    version    : 'v2.5'
+                });
+            };
+
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
     </head>
 
 
@@ -322,6 +340,13 @@
                     <a href='https://youtu.be/4Imf_G7GELA?t=5m24s' target='_blank'>En bonus de fin, un extrait (avec du sexe !) en rapport avec cette dernière partie, issu de l'excellente série <em>Misfits</em></a>.
                 </div>
             <div id='buttonGoodbye' class='goodbye'></div>
+            
+            <div
+                 class="fb-like"
+                 data-share="true"
+                 data-width="450"
+                 data-show-faces="true">
+            </div>
         </section>
         
 
