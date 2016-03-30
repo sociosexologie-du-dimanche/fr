@@ -283,7 +283,7 @@
  })();
 
 //ScrollTO
-			$(document).ready(function() {
+$(document).ready(function() {
 				$('.scrollTo').click( function() { // Au clic sur un élément
 					var page = $(this).attr('href'); // Page cible
 					var speed = 900; // Durée de l'animation (en ms)
