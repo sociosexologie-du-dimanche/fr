@@ -624,7 +624,7 @@ h2 {
 }
 
 
-#quizz7 .commentaire,#quizz6 .infographie {
+#quizz7 .commentaire,#quizz7 .infographie {
     display:table-cell;
     width: 50% ;
     padding-top : 170px ;
