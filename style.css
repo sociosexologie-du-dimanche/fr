@@ -609,26 +609,22 @@ h2 {
     margin : 0px auto ;
 }
 
-#quizz2 .fenetreQuestion {
+#quizz3 .fenetreQuestion {
     width : 90% ;
     left: 5%
 }
-#quizz2 .infographie {
+#quizz3 .infographie {
     padding : 0 ;
     width: 400px;
     height: 400px;
     margin : 0px auto ;
 }
-#quizz2 .commentaire{
+#quizz3 .commentaire{
     padding : 5px 10px ;
 }
 
-#infographiePam .commentaire, #infographiePam .infographie {
-    -webkit-filter : none ;
-    filter : none ;
-}
 
-#quizz6 .commentaire,#quizz6 .infographie {
+#quizz7 .commentaire,#quizz7 .infographie {
     display:table-cell;
     width: 50% ;
     padding-top : 170px ;
@@ -640,20 +636,20 @@ h2 {
     -o-transition : -webkit-filter 1s ;
 }
 
-#quizz6 .infographie p {
+#quizz7 .infographie p {
     text-align: center ;
     padding : 10px 40px 20px 60px ;
 }
-#quizz6 .commentaire p {
+#quizz7 .commentaire p {
     text-align: center ;
     padding : 10px 60px 20px 40px ;
 }
 
-#quizz6 .infographie {
+#quizz7 .infographie {
     background: url('Images/cohab.png') no-repeat top center ;
 }
 
-#quizz6 .commentaire {
+#quizz7 .commentaire {
     background: url('Images/noncohab.png') no-repeat top center ;
 }
 

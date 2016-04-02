@@ -2,7 +2,8 @@
     $(function() {
   $('#couple').highcharts({
     chart: {
-      type: 'bar'
+        type: 'bar',
+        backgroundColor : null
     },
     colors: ['#CBA148', '#107671', '#004C59'],
     title: {
@@ -292,7 +293,8 @@ $(function () {
     $(function () {
     $('#nombre').highcharts({
         chart: {
-            type: 'bar'
+            type: 'bar',
+            backgroundColor : null
         },
              		colors: ['#004C59','#107671'],
 
@@ -333,10 +335,12 @@ $(function () {
 })();
 
 //Polsodo
-(function(){
     $(function () {
     $('#polsodo').highcharts({ 
-     		colors: ['#CBA148', '#107671', '#004C59'],
+        chart : {
+            backgroundColor : null
+        },
+        colors: ['#CBA148', '#107671', '#004C59'],
         title: {
             text: '',
             x: -20 //center
@@ -390,15 +394,13 @@ $(function () {
 });
 
 
-})();
-
 // Treemap
-(function(){
     $(function () {
     $('#treemap').highcharts({
     		chart : {
-        	type : 'treemap'
-        },
+        	   type : 'treemap',
+                backgroundColor : null
+            },
     		plotOptions : {
         	treemap : {
 							allowDrillToNode : true,
@@ -539,13 +541,13 @@ $(function () {
         }
     });
 });
-})();
 
 // vieillir
     $(function () {
     $('#vieillir').highcharts({
         chart: {
-            type: 'area'
+            type: 'area',
+            backgroundColor : null
         },
         colors:['rgba(248,215,201,1)','rgba(0,146,185,0.3)','rgba(203,161,72,0.5)'],
         legend : {
