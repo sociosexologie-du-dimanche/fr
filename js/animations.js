@@ -13,6 +13,137 @@
     });
 })();
 
+// QUIZZ
+(function(){
+//------------------------------------------------------------
+// Création du tableau 'textes'
+    var    reponse1V =  "<p> Et bien oui ! La part des individus en France se déclarant <em>non-religieux</em> et ayant déjà eu un rapport sexuel avec quelqu'un du même sexe est de <span class='chiffre'>16%</span>. Il en est de même pour les individus appartenant à <span class='emph'>une religion autre que le catholicisme</span>.<p> Les catholiques quant à eux sont moins tentés par les expériences homosexuelles, mais la différence n'est pas bien significative... <span class='chiffre'>12%</span> des catholiques ont déjà eu une expérience avec quelqu'un du même sexe. C'est à dire seulement <span class='chiffre'>4 points</span> de pourcentage de moins que le reste de la population !</p>",
+        reponse1F = "<p> Pas du tout ! On est loin de l'époque où la foi et l'homosexualité sont incompatibles ! La part des individus en France se déclarant <em>non-religieux</em> et ayant déjà eu un rapport sexuel avec quelqu'un du même sexe est de <span class='chiffre'>16%</span>. Il en est de même pour les individus appartenant à <span class='emph'>une religion autre que le catholicisme</span>.<p> Les catholiques quant à eux sont moins tentés par les expériences homosexuelles, mais la différence n'est pas bien significative... <span class='chiffre'>12%</span> des catholiques ont déjà eu une expérience avec quelqu'un du même sexe. C'est à dire seulement <span class='chiffre'>4 points</span> de pourcentage de moins que le reste de la population !</p>",
+        reponse2V = "<p> En effet, les répondants religieux sont plus nombreux à <q> n'avoir jamais... </q> que les non-religieux. C'est ainsi que <span class='chiffre'> 21%</span>  des catholiques pratiquants et <span class='chiffre'> 23%</span> des individus d'une autre religion <span class='emph'> n'ont jamais sucé ou léché le sexe de leur partenaire </span>, contre seulement <span class='chiffre'> 11%</span> chez les non-religieux. Les catholiques non-pratiquants quant à eux aiment autant lécher/sucer le sexe de leur partenaire que leurs compatriotes agnostiques.</p><p> Plus que l'appartenance religieuse, c'est donc la pratique de la religion qui est déterminante pour expliquer les pratiques sexuelles des individus. <span class='chiffre'> 63%</span> <span class='emph'>des catholiques pratiquants n'ont jamais pratiqué la sodomie </span> même avec une personne du même sexe contre <span class='chiffre'> 46%</span> <span class='emph'> pour le reste de la population </span> </p>",
+        reponse2F = "<p> Si vous êtes un.e P.A.M. et que vous avez répondu ça, alors vous n'êtes pas comme la majorité ! Si non, vous avez juste faux. C'est ainsi que <span class='chiffre'> 21%</span>  des catholiques pratiquants et <span class='chiffre'> 23%</span> des individus d'une autre religion <span class='emph'> n'ont jamais sucé ou léché le sexe de leur partenaire </span>, contre seulement <span class='chiffre'> 11%</span> chez les non-religieux. Les catholiques non-pratiquants quant à eux aiment autant lécher/sucer le sexe de leur partenaire que leurs compatriotes agnostiques.</p><p> Plus que l'appartenance religieuse, c'est donc la pratique de la religion qui est déterminante pour expliquer les pratiques sexuelles des individus. <span class='chiffre'> 63%</span> <span class='emph'>des catholiques pratiquants n'ont jamais pratiqué la sodomie </span> même avec une personne du même sexe contre <span class='chiffre'> 46%</span> <span class='emph'> pour le reste de la population </span> </p>",
+        reponse3V = "<p> Effectivement ! Il paraît que les femmes vont plus souvent dans les détails que les hommes lors de leurs conversations entre amis... On entend rarement un homme aller dans le détail à propos de ce qu'il a fait ou pas à sa partenaire la nuit dernière. On entend d'ailleurs encore trop rarement un homme parler de sexe en laissant entendre qu'il était là pour le plaisir de l'autre...</p><p>Mais dans les faits, on constate qu'<span class='emph'>une proportion plus grande d'hommes (49%) que de femmes (36%) <em>suce ou lèche souvent le sexe de son/sa partenaire</em></span>. Inversement, <span class='chiffre'>15%</span> des femmes déclarent ne jamais le faire, contre <em>seulement</em> <span class='chiffre'>11%</span> des hommes. Au fond, c'est plutôt clair, quel que soit le sexe de votre partenaire, les gâteries, c'est bien, mangez-en.</p>",
+        reponse3F = "<p> Ah, l'imaginaire collectif et les faits... deux choses radicalement différentes ! Il est vrai que dans une société androcentrée, une conséquence <em>attendue</em> de la domination masculine serait que les gâteries soient plutôt données par les femmes et reçues par les hommes... et bien non, et tant mieux !</p><p>On constate qu'<span class='emph'>une proportion plus grande d'hommes (49%) que de femmes (36%) <em>suce ou lèche souvent le sexe de son/sa partenaire</em></span>. Inversement, <span class='chiffre'>15%</span> des femmes déclarent ne jamais le faire, contre <em>seulement</em> <span class='chiffre'>11%</span> des hommes. Au fond, c'est plutôt clair, quel que soit le sexe de votre partenaire, les gâteries, c'est bien, mangez-en.</p>",
+        reponse4F = "<p>Bien tenté, mais non ! Parmi les hommes disposant d'un diplôme supérieur au baccalauréat, <span class='chiffre'>48%</span> déclarent sucer ou lécher souvent le sexe de leur partenaire. Parmi ceux ayant un diplôme inférieur au baccalauréat, ils sont <span class='chiffre'>50%</span> ! Inversement, <span class='chiffre'>13%</span> des premiers déclarent ne jamais le faire, contre <span class='chiffre'>9%</span> pour les seconds. La différence n'est de fait pas énorme, et elle est plus grande chez les femmes.</p><p> Chez les femmes, l'effet du diplôme est inversé. Les diplômées sont plus nombreuses à utiliser leur bouche <span class='emph'>souvent</span> et moins nombreuses à ne le faire <span class='emph'>jamais</span>. Que traduit cet effet opposé entre les hommes et les femmes ? L'éducation contribue à réduire les différences de pratiques sexuelles entre hommes et femmes, comme ça tout le monde profite des talents lingaux de l'autre sexe ! Sur l'infographie ci-dessus, on vous résume toutes ces informations.</p><p class='hidden'> Pour les attentifs qui ont remarqué que la longueur des barres ne correspond pas au pourcentage donné : elle correspond à la proportion relative des répondants entre les deux modalités <em>souvent</em> et <em>jamais</em>, afin de mieux comparer les différentes séries. La somme des pourcentages ne fait pas 100, et c'est normal !</p>",
+        reponse4V="<p>C'est bien ça ! Parmi les femmes disposant d'un diplôme supérieur au baccalauréat, <span class='chiffre'>36%</span> déclarent sucer ou lécher souvent le sexe de leur partenaire. Parmi celles ayant un diplôme inférieur au baccalauréat, elles sont <span class='chiffre'>29%</span>. Inversement, <span class='chiffre'>14%</span> des premières déclarent ne jamais le faire, contre <span class='chiffre'>18%</span> pour les secondes. Ces écarts sont plus grands que chez les hommes, environ deux fois plus grands.</p><p> Chez les hommes, l'effet du diplôme est inversé. Les diplômés sont moins nombreux à utiliser leur bouche <span class='emph'>souvent</span> et plus nombreux à ne le faire <span class='emph'>jamais</span>. Que traduit cet effet opposé entre les hommes et les femmes ? L'éducation contribue à réduire les différences de pratiques sexuelles entre hommes et femmes, comme ça tout le monde profite des talents lingaux de l'autre sexe ! Sur l'infographie ci-dessus, on vous résume toutes ces informations.</p><p class='hidden'> Pour les  attentifs qui ont remarqué que la longueur des barres ne correspond pas au pourcentage donné : elle correspond à la proportion relative des répondants entre les deux modalités <em>souvent</em> et <em>jamais</em>, afin de mieux comparer les différentes séries. La somme des pourcentages ne fait pas 100, et c'est normal !</p>",
+        reponse5V="<p>Et vous avez... partiellement raison! Il est vrai que <span class='emph'> la pratique de la sodomie est un tout petit peu plus courante chez les gauchos </span> que chez les droitistes: <span class='chiffre'>53%</span> des électeurs PS et 51% des écologistes ont déclaré avoir déjà pratiqué la pénétration anale contre <span class='chiffre'> 50% </span> des électeurs UMP et 49% des électeurs du Modem-UDI. Ces derniers sont également <span class='emph'> les plus frileux en matière d'homosexualité </span>. Ainsi, 10% des électeurs UMP ont déclarés avoir eu une relation homosexuelle, contre 15% des électeurs PS. <\p> Mais c'est en fait aux extrêmes que la fête est plus folle. <span class='emph'> Front de Gauche et Front National </span> gagnent ainsi le prix des plus décoincés avec respectivement <span class='chiffre'> 59% </span> et <span class='chiffre'>57%</span> des électeurs ayant déjà pratiqué la sodomie. C'est à dire en moyenne <span class='chiffre'> 8 points </span> de pourcentage de plus que les électeurs plus modérés! On retrouve d'ailleurs le même schéma en U conçernant <span class='emph'>les expériences sexuelles avec plus de deux personnes en même temps</span>. FN et Front de Gauche sont en tête, avec respectivement <span class='chiffre'>22% et 21%</span> de leurs électeurs ayant déjà donné de l'amour à plusieurs personnes en même temps. En voilà une valeur commune!</p>",
+        reponse5F="<p> Attention aux raccourcis ! Il est vrai que <span class='emph'> la pratique de la sodomie est un peu plus courante chez les gauchos </span> que chez les droitistes: <span class='chiffre'>53%</span> des électeurs PS et 51% des écologistes ont déclaré avoir déjà pratiqué la pénétration anale contre <span class='chiffre'> 50% </span> des électeurs UMP et 49% des électeurs du Modem-UDI. Ces derniers sont également <span class='emph'> les plus frileux en matière d'homosexualité </span>. Ainsi, 10% des électeurs UMP ont déclarés avoir eu une relation homosexuelle, contre 15% des électeurs PS. <\p> Mais c'est en fait aux extrêmes que la fête est plus folle. <span class='emph'> Front de Gauche et Front National </span> gagnent ainsi le prix des plus décoincés avec respectivement <span class='chiffre'> 59% </span> et <span class='chiffre'>57%</span> des électeurs ayant déjà pratiqué la sodomie. C'est à dire en moyenne <span class='chiffre'> 8 points </span> de pourcentage de plus que les électeurs plus modérés! On retrouve d'ailleurs le même schéma en U conçernant <span class='emph'>les expériences sexuelles avec plus de deux personnes en même temps</span>. FN et Front de Gauche sont en tête, avec respectivement <span class='chiffre'>22% et 21%</span> de leurs électeurs ayant déjà donné de l'amour à plusieurs personnes en même temps. En voilà une valeur commune!</p>",
+        reponse6V="<p> Vive la constance ! En effet, parmi les individus <span class='emph'>peu ou pas satisfaits</span> de leur vie sexuelle, les moins insatisfaits sont les individus déclarant n'avoir eu qu'<span class='emph'>un seul partenaire</span>. Parmi ces amants uniques, <span class='chiffre'>1 sur 4</span> est peu satisfait voire pas satisfait du tout, contre <span class='chiffre'>1 sur 3</span> pour les petits lapins ayant eu entre quatre et cinq partenaires différents !</p><p>On constate de fait qu'à partir de deux partenaires, <span class='emph'>les taux d'insatisfaction sont globalement les mêmes</span>, qu'il y ait eu deux partenaires ou dix-huit ! Comment l'expliquer ? Valeur particulière de la première conquête et complicité extrême de l'unique ? Niveau d'exigence qui augmente avec la diversité ? La réponse est entre vos mains ! <span class='hidden'>vos mains, pas vos jambes...</span></p>",
+        reponse6F="<p>Tant pis pour Barney ! Car oui, parmi les individus <span class='emph'>peu ou pas satisfaits</span> de leur vie sexuelle, les moins insatisfaits sont les individus déclarant n'avoir eu qu'<span class='emph'>un seul partenaire</span>. Parmi ces amants uniques, <span class='chiffre'>1 sur 4</span> est peu satisfait voire pas satisfait du tout, contre <span class='chiffre'>1 sur 3</span> pour les petits lapins ayant eu entre quatre et cinq partenaires différents !</p><p>On constate de fait qu'à partir de deux partenaires, <span class='emph'>les taux d'insatisfaction sont globalement les mêmes</span>, qu'il y ait eu deux partenaires ou dix-huit ! Comment l'expliquer ? Valeur particulière de la première conquête et complicité extrême de l'unique ? Niveau d'exigence qui augmente avec la diversité ? La réponse est entre vos mains ! <span class='hidden'>oui vos mains, pas vos jambes</span></p>",
+        reponse7F="<p>...c'est le cas de <em>seulement</em> <span class='chiffre'>14%</span> des couples non-cohabitants</p><p>...tandis qu'on en trouve <span class='chiffre'>1 sur 2</span> parmi les couples non cohabitants</p>",
+        reponse7V=reponse7F,
+        reponse8F="<p>Quel pessimisme ! La proportion de répondants ayant une activité sexuelle modérée mais régulière (environ une fois par semaine) est <span class='emph'>la même quel que soit l'âge</span> : <span class='chiffre'>45%</span> (cliquez sur la légende du graphique). Il reste vrai que les moins de 25 ans sont en tête avec <span class='chiffre'>15%</span> d'entre eux qui s'aiment près d'un jour sur deux. Chez les plus de 65 ans ayant un tel rythme, on passe à... <span class='chiffre'>2%</span>.</p><p>Pas de panique cependant, entre 50 et 65 ans, on compte encore <span class='chiffre'>1 répondant sur 4</span> avec un rythme d'<span class='emph'>au moins deux fois par semaine</span>. Mieux : en cumulant les effectifs, on compte <span class='emph'>plus de la moitié des plus de 65 ans qui ne répondent pas jamais</span>... Bonne nouvelle, donc, on continue à se faire plaisir quand on vieillit, mais avec une touche de modération !</p>",
+        reponse8V="<p>C'est beau ! Effectivement, la proportion de répondants ayant une activité sexuelle modérée mais régulière (environ une fois par semaine) est <span class='emph'>la même quel que soit l'âge</span> : <span class='chiffre'>45%</span> (cliquez sur la légende du graphique). En revanche, les moins de 25 ans restent en tête avec <span class='chiffre'>15%</span> d'entre eux qui s'aiment près d'un jour sur deux. Chez les plus de 65 ans ayant un tel rythme, on passe à... <span class='chiffre'>2%</span>.</p><p>Pas de panique cependant, entre 50 et 65 ans, on compte encore <span class='chiffre'>1 répondant sur 4</span> avec un rythme d'<span class='emph'>au moins deux fois par semaine</span>. Mieux : en cumulant les effectifs, on compte <span class='emph'>plus de la moitié des plus de 65 ans qui ne répondent pas jamais</span>... Bonne nouvelle, donc, on continue à se faire plaisir quand on vieillit, mais avec une touche de modération !</p>",
+    textes = {
+        vrai : [
+            reponse1V ,
+            reponse2V ,
+            reponse3V ,
+            reponse4V ,
+            reponse5V ,
+            reponse6V ,
+            reponse7V ,
+            reponse8V ,
+        ],
+        faux : [
+            reponse1F ,
+            reponse2F ,
+            reponse3F , 
+            reponse4F ,
+            reponse5F ,
+            reponse6F ,
+            reponse7F ,
+            reponse8F ,
+    ]},
+        scroller = function(){};
+    
+    
+    document.querySelector("#quizz1 .commentaire").innerHTML = reponse1V ;
+    document.querySelector("#quizz2 .commentaire").innerHTML = reponse2V ;
+    document.querySelector("#quizz3 .commentaire").innerHTML = reponse3V ;
+    document.querySelector("#quizz4 .commentaire").innerHTML = reponse4V ;
+    document.querySelector("#quizz5 .commentaire").innerHTML = reponse5V ;
+    document.querySelector('#quizz6 .commentaire').innerHTML = reponse6V ;
+    document.querySelector('#quizz7 .commentaire').innerHTML = reponse7V ;
+    document.querySelector('#quizz8 .commentaire').innerHTML = reponse8V ;
+
+
+
+//-------------------------------------------------------------
+// Début du script        
+    var clics = document.querySelectorAll('.fenetreQuestion'),  // Récupération de toutes les fenêtres de question
+        Reponse = {                                               // Création d'un prototype contenant la fenêtre mère parente et le clic
+        init:function(bloc,result){
+            this.fenetre = bloc ;
+            this.result = result ;
+        }
+        },
+        reponse = Object.create(Reponse),                       // Création de l'objet réponse
+        infogra, comm, question,                               // Création des variables utilisées dans la boucle
+        action = function(){
+            question.style.WebkitFilter = 'opacity(0%)' ;     // On désaffiche la fenêtre question
+            infogra.style.WebkitFilter = 'none' ;            // On enlève le flous sur les infographies
+            comm.style.WebkitFilter = 'none' ;
+            
+            question.style.filter = 'opacity(0%)' ;     // On désaffiche la fenêtre question
+            infogra.style.filter = 'none' ;            // On enlève le flous sur les infographies
+            comm.style.filter = 'none' ;
+            
+            question.style.zIndex = '-1' ;  // On passe la fenêtre question derrière pour pas pouvoir cliquer dessus
+        },
+        comLat = document.getElementById('comLat');
+
+    for (i=0, n=clics.length; i<n; i++) {                       // On 'prépare à l'écoute' toutes les fenêtres de la page
+        clics[i].addEventListener('click',function(e){
+
+            if (e.target.className === 'reponseV') {                    // On récupère true si cliqué sur V, false si cliqué sur F
+                reponse.init(e.target.parentNode.parentNode,true);      // et un caractère vide si cliqué ailleurs dans la fenêtre
+            } else if (e.target.className === 'reponseF') {
+                reponse.init(e.target.parentNode.parentNode,false);
+            } else {
+                reponse.init(e.target.parentNode.parentNode,'erreur');
+            }
+        
+            idFenetre = reponse.fenetre.id ;
+        
+            if (reponse.result != 'erreur') {                                  // On ne modifie le CSS que si l'utilisateur a répondu
+                infogra = document.querySelector("#" + idFenetre + " .infographie") ;   // On enregistre les trois enfants de la fenêtre mère
+                question = document.querySelector("#" + idFenetre + " .fenetreQuestion") ;      // On récupère l'élément question
+                comm = document.querySelector("#"+ idFenetre + " .commentaire") ;       // On récupère le commentaire de réponse
+                noQuestion = idFenetre.charAt(5) - 1;
+                (reponse.result) ? comm.innerHTML = textes.vrai[noQuestion]: comm.innerHTML = textes.faux[noQuestion] ; 
+                setTimeout(action,200) ;
+                
+                switch (noQuestion+1) { // On scrolle la page selon le quizz
+                    case 2 : 
+                        window.scrollBy(0,70) ;
+                        break ;
+                    case 3 :
+                        window.scrollBy(0,190) ;
+                        break ;
+                    case 4 :
+                        window.scrollBy(0,175) ;
+                        break ;
+                    case 5 :
+                        window.scrollBy(0,270) ;
+                        break ;
+                    case 6 :
+                        window.scrollBy(0,340) ;
+                        break ;
+                    case 7 :
+                        comLat.style.filter = 'none' ;
+                        comLat.style.WebkitFilter = 'none' ;
+                        window.scrollBy(0,300) ;
+                        break ;
+                    case 8 :
+                        window.scrollBy(0,300) ;
+                        break ;
+                }
+            }
+        });
+    }
+})();
+
+
 // Apparition de la vidéo quand on clique sur le titre pour la section gâteries
 (function(){
     var videoPipe = document.createElement('iframe'),
@@ -380,3 +511,601 @@ chiffre.innerHTML = texteDepart ; // remplissage par le texte de départ à l'ou
 alignerImages(imagesCathos,cathoOui,cathoNon,3) ;
 alignerImages(imagesAthees,atheeOui,atheeNon,4) ;
 })();
+
+// Couple
+    $(function() {
+  $('#couple').highcharts({
+    chart: {
+        type: 'bar',
+        backgroundColor : null
+    },
+    colors: ['#CBA148', '#107671', '#004C59'],
+    title: {
+      text: 'Stacked bar chart'
+    },
+    xAxis: {
+      categories: ['En couple cohabitant', 'En couple non cohabitant', 'Célibataire ayant déjà été en couple', 'Célibataire n\'ayant jamais été en couple']
+    },
+    yAxis: {
+      min: 0,
+      title: {
+        text: 'Pourcentage (%)'
+      }
+    },
+    tooltip: {
+      valueSuffix: '%'
+    },
+    legend: {
+      reversed: true
+    },
+    plotOptions: {
+      series: {
+        stacking: 'normal'
+      }
+    },
+    series: [{
+      name: 'Pas du tout satisfait',
+      data: [5, 3, 19, 16]
+
+    }, {
+      name: 'Peu satisfait',
+      data: [16, 11, 29, 29]
+    }]
+  });
+});
+
+// Gauge
+(function(){
+    
+var legend1 = "<span style='font-weight:100'>Un peu</span>",
+    legend2 = "<span style='font-weight:100'>Beaucoup</span>",
+    legend3 = "<span style='font-weight:100'>Pas du <br/>tout</span>";
+
+
+
+
+$(function () {
+    
+    if (!Highcharts.theme) {
+        Highcharts.setOptions({
+            chart: {
+                backgroundColor: 'none'
+            },
+            colors: ['#CBA148', '#0092B9', '#107671']
+        });
+    }
+    // 
+
+    Highcharts.chart('gauge', {
+
+        chart: {
+            type: 'solidgauge',
+            marginTop: 0
+        },
+
+        title: {
+            text: '',
+        },
+
+        tooltip: {
+            borderWidth : 0,
+            backgroundColor: 'none',
+            shadow: false,
+            style: {
+                fontSize: '15px',
+                fontFamily: 'Gill Sans'
+            },
+            pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}%</span>',
+            positioner: function (labelWidth, labelHeight) {
+                return {
+                    x: 200 - labelWidth / 2,
+                    y: 150
+                };
+            }
+        },
+
+        pane: {
+            startAngle: 0,
+            endAngle: 360,
+            background: [{ // Track for 'un peu H'
+                outerRadius: '112%',
+                innerRadius: '100%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.3).get(),            
+                borderWidth:0,
+
+
+            }, { // Track for 'un peu F'
+                outerRadius: '100%',
+                innerRadius: '88%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.3).get(),
+                 borderWidth:0,
+
+
+            }, { // Track for Beaucoup H
+                outerRadius: '87%',
+                innerRadius: '75%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.3).get(),
+								borderWidth:0,
+
+
+            }, { // Track for Beaucoup F
+                outerRadius: '75%',
+                innerRadius: '63%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.3).get(),
+                borderWidth: 0
+            }, { // Track for Pas du tout H
+                outerRadius: '62%',
+                innerRadius: '50%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.3).get(),
+                borderWidth: 0
+            }, { // Track for Pas du tou F
+                outerRadius: '50%',
+                innerRadius: '38%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.3).get(),
+                borderWidth: 0
+            }]
+        },
+
+        yAxis: {
+            min: 0,
+            max: 60,
+            lineWidth: 0,
+            tickPositions: []
+        },
+
+        plotOptions: {
+            solidgauge: {
+                borderWidth: 17,
+                dataLabels: {
+                    enabled: false
+                },
+                linecap : 'round',
+                stickyTracking: false
+            }
+        },
+
+        series: [{
+            name: '(hommes) <br/><b>Un peu :</b>',
+            borderColor:Highcharts.getOptions().colors[0],
+            data: [{
+                color: Highcharts.getOptions().colors[0],
+                radius: '106%',
+                innerRadius: '106%',
+                y: 40
+            }]
+        }, {
+            name: '(femmes) <br/><b>Un peu :</b>',
+            borderColor:Highcharts.getOptions().colors[0],
+            data: [{
+                color: Highcharts.getOptions().colors[0],
+                radius: '94%',
+                innerRadius: '94%',
+                y: 51
+            }]
+        } , {
+            name: '(hommes) <br/><b>Beaucoup :</b>',
+            borderColor:Highcharts.getOptions().colors[1],
+            data: [{
+                color: Highcharts.getOptions().colors[1],
+                radius: '81%',
+                innerRadius: '81%',
+                y: 49
+            }]
+        }, {
+            name: '(femmes) <br/><b>Beaucoup :</b>',
+            borderColor:Highcharts.getOptions().colors[1],
+            data: [{
+                color: Highcharts.getOptions().colors[1],
+                radius: '69%',
+                innerRadius: '69%',
+                y: 36
+            }]
+        } , {
+            name: '(hommes) <br/><b>Pas du tout :</b>',
+            borderColor:Highcharts.getOptions().colors[2],
+						data: [{
+                color: Highcharts.getOptions().colors[2],
+                radius: '56%',
+                innerRadius: '56%',
+                y: 11
+            }]
+        }, {
+            name: '(femmes) <br/><b>Pas du tout :</b>',
+            borderColor:Highcharts.getOptions().colors[2],
+						data: [{
+                color: Highcharts.getOptions().colors[2],
+                radius: '44%',
+                innerRadius: '44%',
+                y: 15
+            }]
+        }]
+    },
+
+    /**
+     * In the chart load callback, add icons on top of the circular shapes
+     */
+    function callback() {
+
+        // Move icon
+        this.renderer.text(legend1, -55, 5)
+            .attr({
+                'stroke': '#303030',
+                'stroke-linecap': 'round',
+                'stroke-linejoin': 'round',
+                'stroke-width': 0,
+                'zIndex': 10
+            })
+            .translate(190, 26)
+            .add(this.series[2].group);
+
+        // Exercise icon
+        this.renderer.text(legend2, -65, 10)
+            .attr({
+                'stroke': '#303030',
+                'stroke-linecap': 'round',
+                'stroke-linejoin': 'round',
+                'stroke-width': 0,
+                'zIndex': 10
+            })
+            .translate(190, 61)
+            .add(this.series[2].group);
+
+        // Stand icon
+        this.renderer.text(legend3,-50,5)
+            .attr({
+                'stroke': '#303030',
+                'stroke-linecap': 'round',
+                'stroke-linejoin': 'round',
+                'stroke-width': 0,
+                'zIndex': 10
+            })
+            .translate(190, 96)
+            .add(this.series[2].group);
+    });
+
+
+});
+
+})();
+
+// Highcharts1
+(function(){
+    $(function () {
+    $('#highchart1').highcharts({
+        data: {
+            columns: [
+                [null, 'Non-religieux', 'Cathloiques non pratiquants', 'Autres religions','Catholiques pratiquants'], // categories
+                ["N'ont jamais sucé ou léché le sexe de leur partenaire", 11, 12, 21,23], // first series
+                ["N'ont jamais sodomisé leur partenaire", 45, 47, 45,63] // second series
+            ]
+        },
+        colors : ['#0092B9','#004C59'],
+        chart: {
+            type: 'column',
+            backgroundColor : null
+        },
+        title: {
+            text: ''
+        },
+        yAxis: {
+            allowDecimals: false,
+            title :'',
+        },
+        tooltip: {
+            formatter: function () {
+                return '<b>' + this.series.name + ' :</b><br/>' +
+                    this.point.y + '% parmi les ' + this.point.name.toLowerCase();
+            }
+        },
+
+    });
+});
+})();
+
+// Nombre
+(function(){
+    $(function () {
+    $('#nombre').highcharts({
+        chart: {
+            type: 'bar',
+            backgroundColor : null
+        },
+             		colors: ['#004C59','#107671'],
+
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['1','Entre 2 et 3','Entre 4 et 5','Entre 6 et10','Plus de 10']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Pourcentage (%)'
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+            },
+        legend: {
+            reversed: true
+        },
+        plotOptions: {
+            series: {
+                stacking: 'normal'
+            }
+        },
+        series: [ {
+            name: 'Pas du tout satisfait',
+            data: [7,10,9,9,9]
+     
+        },
+        {
+            name: 'Peu satisfait',
+            data: [18,18,21,20,20]
+        }]
+    });
+});
+})();
+
+//Polsodo
+    $(function () {
+    $('#polsodo').highcharts({ 
+        chart : {
+            backgroundColor : null
+        },
+        colors: ['#CBA148', '#107671', '#004C59'],
+        title: {
+            text: '',
+            x: -20 //center
+        },
+       
+        xAxis: {
+            categories: ['Front de Gauche', 'PS','Europe Ecologie les Verts','Modem-UDI','UMP','Front National']
+        },
+        yAxis: {
+            title: {
+                text: 'Pourcentage (%)'
+            },
+             tooltip: {
+            formatter: function () {
+                return '<b>' + this.series.name + ' :</b><br/>' +
+                    this.point.y + '% parmi les ' + this.point.name.toLowerCase();
+            }
+        },
+        
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'center',
+            verticalAlign: 'bottom',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Ont déjà eu une relation sexuelle avec plus de deux personnes en même temps',
+            data: [22, 17, 16, 13, 14, 21],
+            visible : false
+        }, {
+            name: 'Ont déjà eu une relation homosexuelle',
+            data: [16, 15, 18, 11, 10, 15],
+            visible : false
+        }, {
+            name: 'Ont déjà pratiqué la pénétration anale',
+            data: [55, 53, 51, 49, 50, 57]
+            
+        }]
+        
+        
+    });
+});
+
+
+// Treemap
+    $(function () {
+    $('#treemap').highcharts({
+    		chart : {
+        	   type : 'treemap',
+                backgroundColor : null
+            },
+    		plotOptions : {
+        	treemap : {
+							allowDrillToNode : true,
+              interactByLeaf : true,
+              layoutAlgorithm : 'stripes',
+              tooltip : {
+              	pointFormat : '<b>{point.name}</b>'
+              }
+            }
+        },
+        series: [{
+        	levels: [{
+                level: 1,
+                layoutAlgorithm : 'stripes',
+                layoutStartingDirection : 'horizontal',
+                borderWidth : 5,
+                dataLabels: {
+                align : 'left',
+                    enabled: true,
+                    style: {
+                        fontSize: '15px',
+                        fontWeight: 'bold',
+                        color : '#FFFFFF'
+                    }
+                }
+            },{
+            		level : 2,
+                layoutStartingDirection : 'horizontal',
+                dataLabels :{
+                align : 'left',
+                	enabled : true,
+                  style : {
+                  	fontSize : '13px'
+                   },
+                  color : '#FFFFFF'
+                }
+            },{
+            		level : 3,
+                layoutStartingDirection : "vertical",
+                dataLabels : {
+                	enabled : true,
+									color : 'rgb(230,230,230)',
+                  verticalAlign : 'bottom',
+                  align : 'right'
+                }
+            }],
+            data: [{
+                id: 'D',
+                name: 'Supérieur au bac',
+            }, {
+                id: 'R',
+                name: 'Inférieur au bac',
+            },{
+            		id: 'DH',
+                name: 'Hommes',
+                parent : 'D'
+            }, {
+            		id: 'DF',
+                name: 'Femmes',
+                parent : 'D'
+            },{
+                name: 'Souvent : 48%',
+                parent: 'DH',
+                color : '#107671',
+                value: 78.7,
+                  dataLabels :{
+                format : "Souvent"
+                }
+            },{
+            		name : 'Jamais : 13%',
+                parent: 'DH',
+                color : '#004C59',
+                value : 21.3,
+                dataLabels : {
+                format : "Jamais"
+                }
+            },{
+            		name : 'Souvent : 36%',
+                parent: 'DF',
+                color : '#CBA148',
+                value : 72,
+                  dataLabels :{
+                format : "Souvent"
+                }
+            },{
+            		name : 'Jamais : 14%',
+                parent : 'DF',
+                color : '#B67823',
+                value : 28,
+                dataLabels : {
+                format : "Jamais"
+                }
+            },{
+            		id: 'RH',
+                name: 'Hommes',
+                parent : 'R',
+            }, {
+                id: 'RF',
+                name: 'Femmes',
+                parent : 'R',
+            },{
+                name: 'Souvent : 50%',
+                parent: 'RH',
+  							color: '#107671',
+                value: 84.7,
+                  dataLabels :{
+                format : "Souvent"
+                }
+            },{
+            		name : 'Jamais : 9%',
+                parent: 'RH',   
+                color : '#004C59',
+                value : 15.3,
+                dataLabels : {
+                format : "Jamais"
+                }
+            },{
+            		name : 'Souvent : 29%',
+                parent: 'RF',
+                value : 61.7,
+                color : '#CBA148',
+                dataLabels :{
+                format : "Souvent"
+                }
+            },{
+            		name : 'Jamais : 18%',
+                parent : 'RF',
+                value : 38.3,
+                color : '#B67823',
+                dataLabels : {
+                format : "Jamais"
+                }
+            }],
+
+        }],
+        title: {
+            text: ''
+        }
+    });
+});
+
+// vieillir
+    $(function () {
+    $('#vieillir').highcharts({
+        chart: {
+            type: 'area',
+            backgroundColor : null
+        },
+        colors:['rgba(248,215,201,1)','rgba(0,146,185,0.3)','rgba(203,161,72,0.5)'],
+        legend : {
+        	width : 50,
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['Moins de 35 ans','Entre 35 et 50 ans','Plus de 50 ans']
+        },
+        yAxis: {
+            title: {
+                text: "Part de la génération d'âge"
+            },
+            floor : 20
+        },
+        tooltip: {
+            pointFormat: '{series.name} : <b>{point.y}%</b><br/>'
+        },
+        plotOptions: {
+            area: {
+                marker: {
+                    enabled: false,
+                    symbol: 'circle',
+                    radius: 2,
+                    states: {
+                        hover: {
+                            enabled: true
+                        }
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Au moins deux fois par semaine',
+            data: [33,31,21]
+        },{
+            name: 'Environ une fois par semaine',
+            data: [46,46,46],
+            visible : false
+        },{
+            name: 'Jamais',
+            data: [21,23,33]
+        }]
+    });
+});
